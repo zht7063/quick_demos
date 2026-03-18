@@ -1,0 +1,28 @@
+# 这个 sh 文件用于配置我自己的 shell 快捷键和环境变量。
+# 请在 ~/.bashrc 中使用以下方式引用该文件：
+# if [ -f path_to_myshrc.sh ]; then
+#     . path_to_myshrc.sh
+# fi
+
+# 常用命令
+alias sc="source ~/.bashrc"
+alias cls="clear"
+
+# 代理配置
+alias mihomo="cd ~/mihomo && ./mihomo -d ."
+# proxy_on, proxy_off, proxy_test, proxy_proxy
+alias pon="export http_proxy='http://127.0.0.1:7890'; export https_proxy='http://127.0.0.1:7890'; export all_proxy='socks5://127.0.0.1:7890'"
+alias poff="unset http_proxy; unset https_proxy; unset all_proxy; unset ftp_proxy"
+alias pt="curl -I www.google.com"
+alias pp="pon && pt"
+
+# claude code config
+export OPENROUTER_API_KEY="<your-openrouter-api-key>"
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
+export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
+export ANTHROPIC_API_KEY="" # Important: Must be explicitly empty
+# set models
+export ANTHROPIC_DEFAULT_OPUS_MODEL="minimax/minimax-m2.5"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="minimax/minimax-m2.5"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="minimax/minimax-m2.5"
+export CLAUDE_CODE_SUBAGENT_MODEL="minimax/minimax-m2.5"
