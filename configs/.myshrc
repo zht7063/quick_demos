@@ -1,7 +1,7 @@
 # 这个 sh 文件用于配置我自己的 shell 快捷键和环境变量。
-# 请在 ~/.bashrc 中使用以下方式引用该文件：
-# if [ -f path_to_myshrc.sh ]; then
-#     . path_to_myshrc.sh
+# 请在 ~/.bash_profile 中使用以下方式引用该文件：
+# if [ -f ~/opencodes/quick_demos/configs/.myshrc ]; then
+#     . ~/opencodes/quick_demos/configs/.myshrc
 # fi
 
 # 常用命令
@@ -22,7 +22,7 @@ export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
 export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
 export ANTHROPIC_API_KEY="" # Important: Must be explicitly empty
 # set models
-export ANTHROPIC_DEFAULT_OPUS_MODEL="minimax/minimax-m2.5"
-export ANTHROPIC_DEFAULT_SONNET_MODEL="minimax/minimax-m2.5"
-export ANTHROPIC_DEFAULT_HAIKU_MODEL="minimax/minimax-m2.5"
-export CLAUDE_CODE_SUBAGENT_MODEL="minimax/minimax-m2.5"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="minimax/minimax-m2.7"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="minimax/minimax-m2.7"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="minimax/minimax-m2.7"
+export CLAUDE_CODE_SUBAGENT_MODEL="minimax/minimax-m2.7"
