@@ -6,7 +6,10 @@
 # Python
 __pycache__/
 *.py[cod]
+# 带版本标签的字节码（如 *.cpython-314.pyc），*.py[cod] 无法覆盖
+*.pyc
 *$py.class
+.ruff_cache/
 *.pyo
 *.pyd
 .Python
